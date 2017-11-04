@@ -1,0 +1,84 @@
+body {margin:0;}
+
+/* Start of Navbar styles */
+#navBar {
+	height:70px;
+}
+
+.navbar .navbar-collapse{
+	position: relative;
+	top:12px;
+	font-size: 14px;
+}
+
+.navbar-brand {
+	position:relative; top:-14px;
+	z-index:1;
+}
+/* End of Navbar styles */
+
+.panel-default{
+	border-radius:0px;
+}
+
+/* Start of Weather bar styles */
+#weather{
+	background-color: #ddd
+}
+
+#weather_on_day{
+	text-align:center
+}
+
+#degree{
+	font-size: 28px;
+	position: relative;
+	top:5px;
+}
+/* End of Weather bar styles */
+
+#myCarousel .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+
+#myCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+	width: 378px;
+}
+#myCarousel .list-group-item {
+	border-radius:0px;
+	cursor:pointer;
+	border: none;
+	width: 378px;
+	
+}
+#myCarousel .list-group .active {
+	background-color:#ddd;
+	color: #000;
+	width: 378px;
+}
+
+@media (min-width: 1200px) { 
+	#myCarousel {padding-right:33.3333%;}
+	#myCarousel .carousel-controls {display:none;} 	
+}
+@media (max-width: 991px) { 
+	.carousel-caption p,
+	#myCarousel .list-group {display:none;} 
+	
+}
+
+@media (max-width: 1199px) and (min-width: 992px){
+	h4 { font-size: 14px; }
+	#myCarousel {padding-right:40.3333%;}
+	#myCarousel .carousel-controls {display:none;} 
+}
+

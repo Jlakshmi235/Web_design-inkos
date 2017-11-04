@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to Inkos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="inkos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="inkos.js"></script>
+
+</head>
+<body>
+
+  <!-- Start of navigation bar -->
+  <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header" id="navBar" >
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="landing-page.html"><img src ="images/logo.png" id="logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="how-to-survive.html">HOW TO SURVIVE</a></li>
+          <li><a href="find-shelter.html">FIND SHELTER</a></li>
+          <li><a href="request-help.html">REQUEST HELP</a></li>
+          <li><a href="volunteer-help.html">VOLUNTEER HELP</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End of navigation bar -->
+
+  <!--Start of weather bar -->
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-body" id="weather">
+        <div class="row">
+
+            <!--Start of weather for a particular day -->
+            <div class="col-sm-3" id="weather_on_day">
+              <p>Wednesday, Nov 6</p>
+              <img src="images/icons8-windy-weather.png"> <span id="degree"> 42 F </span>
+                <p>Windy</p>
+            </div>
+            <!--End of weather for a particular day -->
+
+            <!--Start of weather for a particular day -->
+            <div class="col-sm-3" id="weather_on_day">
+              <p>Thursday, Nov 7</p>
+              <img src="images/icons8-torrential-rain.png"> <span id="degree"> 38 F </span>
+                <p>Heavy Rains</p>
+            </div>
+            <!--End of weather for a particular day -->
+
+            <!--Start of weather for a particular day -->
+            <div class="col-sm-3" id="weather_on_day">
+              <p>Friday, Nov 8</p>
+              <img src="images/icons8-torrential-rain.png"> <span id="degree"> 40 F </span>
+                <p>Heavy Rains</p>
+            </div>
+            <!--End of weather for a particular day -->
+
+            <!--Start of weather for a particular day -->
+            <div class="col-sm-3" id="weather_on_day">
+              <p>Saturday, Nov 9</p>
+              <img src="images/icons8-partly-cloudy-day.png"> <span id="degree"> 47 F </span>
+                <p>Cloudy</p>
+            </div>
+            <!--End of weather for a particular day -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of weather bar -->
+
+
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+      
+        <div class="item active">
+          <img src="images/news3.jpg" >
+           <div class="carousel-caption">
+            <h4><a target="_blank" href="https://weather.com/storms/tornado/news/2017-11-02-severe-thunderstorms-winds-hail-tornado-midwest-early-november">Severe Thunderstorms, Including the Threat of a Few Tornadoes, Will Return to Parts of the Midwest, Ohio Valley Sunday</a></h4>
+            
+          </div>
+        </div><!-- End Item -->
+ 
+         <div class="item">
+          <img src="images/news4.png" >
+           <div class="carousel-caption" >
+            <h4><a target="_blank" href="https://weather.com/en-CA/canada/news/news/2017-11-02-warm-november-start-midwest-south-northeast">Pattern Change Brings Warm Start to November in the U.S. South, Midwest and Northeast, But a Change Looms For Next Week</a></h4>
+
+          </div>
+        </div><!-- End Item -->
+
+        <div class="item">
+          <img src="images/news1.jpg" >
+           <div class="carousel-caption">
+            <h4><a target="_blank" href="http://www.chicagotribune.com/news/nationworld/ct-new-england-severe-weather-20171030-story.html">Utilities warn that power could be out for days in Northeast</a></h4>
+
+          </div>
+        </div><!-- End Item -->
+
+         <div class="item">
+          <img src="images/news2.jpg" >
+           <div class="carousel-caption" >
+            <h4><a target="_blank" href="http://abc7chicago.com/weather/chicago-to-see-coldest-halloween-in-over-2-decades/2585070/">Chicago to see coldest Halloween in over 2 decades</a></h4>
+ 
+          </div>
+        </div><!-- End Item -->
+                
+      </div><!-- End Carousel Inner -->
+
+
+    <ul class="list-group col-sm-4">
+      <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active"><h4>Severe Thunderstorms, Including the Threat of a Few Tornadoes, Will Return to Parts of the Midwest, Ohio Valley Sunday (Nov 5)</h4></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="list-group-item"><h4>Pattern Change Brings Warm Start to November in the U.S. South, Midwest and Northeast, But a Change Looms For Next Week</h4></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="list-group-item"><h4>Utilities warn that power could be out for days in Northeast</h4></li>
+      <li data-target="#myCarousel" data-slide-to="3" class="list-group-item"><h4>Chicago to see coldest Halloween in over 2 decades</h4></li>
+    </ul>
+
+      <!-- Controls -->
+      <div class="carousel-controls">
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+      </div>
+
+    </div><!-- End Carousel -->
+</div>
+  
+
+
+</body>
+</html>
