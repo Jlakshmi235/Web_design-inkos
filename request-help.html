@@ -22,76 +22,81 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="index.html"><img src ="images/logo.png" id="logo"></a>
+        <a class="navbar-brand" href="landing-page.html"><img src ="images/logo.png" id="logo"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="how-to-survive.html">HOW TO SURVIVE</a></li>
           <li><a href="find-shelter.html">FIND SHELTER</a></li>
-          <li class="active"><a href="request-help.html">REQUEST HELP</a></li>
+          <li><a href="request-help.html">REQUEST HELP</a></li>
           <li><a href="volunteer-help.html">VOLUNTEER HELP</a></li>
         </ul>
-
       </div>
     </div>
   </nav>
   <!-- End of navigation bar -->
 
   <div class="container">
-    <form class="form-horizontal">
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="name">Name:</label>
-        <div class="col-sm-6">
-          <input type="text" class="form-control" id="name" placeholder="Enter Name">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="address">Address:</label>
-        <div class="col-sm-6"> 
-          <input type="text" class="form-control" id="address" placeholder="Enter Address">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="mobile">Mobile:</label>
-        <div class="col-sm-6"> 
-          <input type="tel" class="form-control" id="mobile" placeholder="Enter Mobile Number">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="email">E-Mail:</label>
-        <div class="col-sm-6"> 
-          <input type="email" class="form-control" id="email" placeholder="Enter E-mail Address">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="date">Date:</label>
-        <div class="col-sm-6"> 
-          <input type="date" class="form-control" id="date" placeholder="Enter Date">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="time">Time:</label>
-        <div class="col-sm-3"> 
-          <input type="time" class="form-control" id="fromtime" placeholder="Enter From Time">
-        </div>
-        <div class="col-sm-3"> 
-          <input type="time" class="form-control" id="totime" placeholder="Enter To Time">
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="text">Description:</label>
-        <div class="col-sm-6"> 
-          <textarea class="form-control" rows="10" id="description" placeholder="Enter Description"></textarea>
-        </div>
-      </div>
+    <div class="alert alert-danger" id="emptyFieldAlert" role="alert">
+      <strong>Error!</strong> You have empty fields.
+    </div>
+    <div class="alert alert-success alert-dismissable" id="submitSuccessAlert" role="alert">
+      <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Success!</strong> Your request has been submitted.
+    </div>
 
-      <div class="form-group"> 
-        <div class="col-sm-offset-5 col-sm-1">
-          <button type="submit" class="btn btn-default">Submit</button>
+    <form class="form-horizontal" id="informationForm">
+      <div class="form-group">
+        <label class="control-label col-sm-offset-2 col-sm-2" for="nameInput">Name:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control requiredInput" id="nameInput" placeholder="John Doe">
         </div>
-        <div class="col-sm-1">
-          <button type="cancel" class="btn btn-default">Cancel</button>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-2 col-sm-2" for="addressInput">Address:</label>
+        <div class="col-sm-5"> 
+          <input type="text" class="form-control requiredInput" id="addressInput" placeholder="633 Clark Street, Evanston, IL">
         </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-2 col-sm-2" for="mobileInput">Mobile:</label>
+        <div class="col-sm-5"> 
+          <input type="tel" class="form-control requiredInput" id="mobileInput" placeholder="000-000-0000">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-2 col-sm-2" for="emailInput">E-Mail:</label>
+        <div class="col-sm-5"> 
+          <input type="email" class="form-control requiredInput" id="emailInput" placeholder="example@example.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-2 col-sm-2" for="dateInput">Date:</label>
+        <div class="col-sm-5"> 
+          <input type="date" class="form-control requiredInput" id="dateInput" placeholder="YYYY-MM-DD">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-2 col-sm-2" for="fromTimeInput">From:</label>
+        <div class="col-sm-2"> 
+          <input type="time" class="form-control requiredInput" id="fromTimeInput" placeholder="00:00 PM">
+        </div>
+        <label class="control-label col-sm-1" for="toTimeInput">To:</label>
+        <div class="col-sm-2"> 
+          <input type="time" class="form-control requiredInput" id="toTimeInput" placeholder="00:00 PM">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-2 col-sm-2" for="descriptionInput">Description:</label>
+        <div class="col-sm-5"> 
+          <textarea type="text" class="form-control requiredInput" rows="10" id="descriptionInput" placeholder="Detailed Description"></textarea>
+        </div>
+      </div>
+      <div class="col-sm-offset-4 col-sm-1">
+        <button type="button" id="submitButton" class="btn btn-success" role="button">Submit</button>
+      </div>
+      <div class="col-sm-1">
+        <a href="request-help.html" id="cancelButton" class="btn btn-danger" role="button">Cancel</a>
       </div>
     </form>
   </div>
