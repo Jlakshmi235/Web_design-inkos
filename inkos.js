@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-/* Function for Landing Page */    
+/* Function for Landing Page news carousel */    
 	var clickEvent = false;
 	$('#myCarousel').carousel({
 		interval:   4000	
@@ -21,18 +21,27 @@ $(document).ready(function(){
 		clickEvent = false;
 	});
 
+$(window).load(function() {
+    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+    var itemlength = $('#myCarousel .item').length;
+    var triggerheight = Math.round(boxheight/itemlength+1);
+	$('#myCarousel .list-group-item').outerHeight(triggerheight);
+});
+
 /* Function for Request Help Page */
 	$('.alert').hide();
 	$('#submitButton').on('click', function() {
 		var name = $('#nameInput').val().trim();
-		var address = $('#addressInput').val().trim();
-		var mobile = $('#mobileInput').val().trim();
+		var street = $('#streetInput').val().trim();
+		var city = $('#cityInput').val().trim();
+		var zip = $('#zipInput').val().trim();
+		var phone = $('#phoneInput').val().trim();
 		var email = $('#emailInput').val().trim();
 		var date = $('#dateInput').val().trim();
 		var fromtime = $('#fromTimeInput').val().trim();
 		var totime = $('#toTimeInput').val().trim();
 		$('.requiredInput').removeAttr("style");
-		if (name != "" && address != "" && mobile != "" && email != "" && date != "" && fromtime != "" && totime != ""){
+		if (name != "" && street != "" && city != "" && zip != "" && phone != "" && email != "" && date != "" && fromtime != "" && totime != ""){
 			$('#informationForm').trigger("reset");
 			$('#emptyFieldAlert').hide();
 			$('#submitSuccessAlert').show();
@@ -42,11 +51,17 @@ $(document).ready(function(){
 			if (name == ""){
 				$('#nameInput').css("background-color", "LemonChiffon");
 			}
-			if (address == ""){
-				$('#addressInput').css("background-color", "LemonChiffon");
+			if (street == ""){
+				$('#streetInput').css("background-color", "LemonChiffon");
 			}
-			if (mobile == ""){
-				$('#mobileInput').css("background-color", "LemonChiffon");
+			if (city == ""){
+				$('#cityInput').css("background-color", "LemonChiffon");
+			}
+			if (zip == ""){
+				$('#zipInput').css("background-color", "LemonChiffon");
+			}
+			if (phone == ""){
+				$('#phoneInput').css("background-color", "LemonChiffon");
 			}
 			if (email == ""){
 				$('#emailInput').css("background-color", "LemonChiffon");
@@ -62,11 +77,4 @@ $(document).ready(function(){
 			}
 		}
 	});
-});
-
-$(window).load(function() {
-    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
-    var itemlength = $('#myCarousel .item').length;
-    var triggerheight = Math.round(boxheight/itemlength+1);
-	$('#myCarousel .list-group-item').outerHeight(triggerheight);
 });

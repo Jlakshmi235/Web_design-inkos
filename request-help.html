@@ -38,7 +38,7 @@
 
   <div class="container">
     <div class="alert alert-danger" id="emptyFieldAlert" role="alert">
-      <strong>Error!</strong> You have empty fields.
+      <strong>Error!</strong> One or more necessary fields are empty.
     </div>
     <div class="alert alert-success alert-dismissable" id="submitSuccessAlert" role="alert">
       <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -49,47 +49,107 @@
       <div class="form-group">
         <label class="control-label col-sm-offset-2 col-sm-2" for="nameInput">Name:</label>
         <div class="col-sm-5">
-          <input type="text" class="form-control requiredInput" id="nameInput" placeholder="John Doe">
+          <input type="text" class="form-control requiredInput" id="nameInput" placeholder="Name">
         </div>
       </div>
       <div class="form-group">
-        <label class="control-label col-sm-offset-2 col-sm-2" for="addressInput">Address:</label>
+        <label class="control-label col-sm-offset-2 col-sm-2" for="streetInput">Address:</label>
         <div class="col-sm-5"> 
-          <input type="text" class="form-control requiredInput" id="addressInput" placeholder="633 Clark Street, Evanston, IL">
+          <input type="text" class="form-control requiredInput" id="streetInput" placeholder="Street">
         </div>
       </div>
       <div class="form-group">
-        <label class="control-label col-sm-offset-2 col-sm-2" for="mobileInput">Mobile:</label>
-        <div class="col-sm-5"> 
-          <input type="tel" class="form-control requiredInput" id="mobileInput" placeholder="000-000-0000">
+        <div class="col-sm-offset-4 col-sm-2"> 
+          <input type="text" class="form-control requiredInput" id="cityInput" placeholder="City">
+        </div>
+        <div class="col-sm-1"> 
+          <select class="form-control requiredInput" id="stateList">
+            <option>AK</option>
+            <option>AL</option>
+            <option>AR</option>
+            <option>AZ</option>
+            <option>CA</option>
+            <option>CO</option>
+            <option>CT</option>
+            <option>DC</option>
+            <option>DE</option>
+            <option>FL</option>
+            <option>GA</option>
+            <option>HI</option>
+            <option>IA</option>
+            <option>ID</option>
+            <option>IL</option>
+            <option>IN</option>
+            <option>KS</option>
+            <option>KY</option>
+            <option>LA</option>
+            <option>MA</option>
+            <option>MD</option>
+            <option>ME</option>
+            <option>MI</option>
+            <option>MN</option>
+            <option>MO</option>
+            <option>MS</option>
+            <option>MT</option>
+            <option>NC</option>
+            <option>ND</option>
+            <option>NE</option>
+            <option>NH</option>
+            <option>NJ</option>
+            <option>NM</option>
+            <option>NY</option>
+            <option>OH</option>
+            <option>OK</option>
+            <option>OR</option>
+            <option>PA</option>
+            <option>RI</option>
+            <option>SC</option>
+            <option>SD</option>
+            <option>TN</option>
+            <option>TX</option>
+            <option>UT</option>
+            <option>VA</option>
+            <option>VT</option>
+            <option>WA</option>
+            <option>WI</option>
+            <option>WV</option>
+            <option>WY</option>
+          </select>
+        </div>
+        <div class="col-sm-2"> 
+          <input type="text" class="form-control requiredInput" id="zipInput" placeholder="ZIP Code">
         </div>
       </div>
       <div class="form-group">
-        <label class="control-label col-sm-offset-2 col-sm-2" for="emailInput">E-Mail:</label>
+        <label class="control-label col-sm-offset-2 col-sm-2" for="phoneInput">Contacts:</label>
         <div class="col-sm-5"> 
-          <input type="email" class="form-control requiredInput" id="emailInput" placeholder="example@example.com" >
+          <input type="tel" class="form-control requiredInput" id="phoneInput" placeholder="Phone Number">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-5"> 
+          <input type="email" class="form-control requiredInput" id="emailInput" placeholder="E-Mail Address">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-offset-2 col-sm-2" for="dateInput">Date:</label>
         <div class="col-sm-5"> 
-          <input type="date" class="form-control requiredInput" id="dateInput" placeholder="YYYY-MM-DD">
+          <input type="date" class="form-control requiredInput" id="dateInput" placeholder="Date">
         </div>
       </div>
       <div class="form-group">
-        <label class="control-label col-sm-offset-2 col-sm-2" for="fromTimeInput">From:</label>
+        <label class="control-label col-sm-offset-2 col-sm-2" for="fromTimeInput">Time:</label>
         <div class="col-sm-2"> 
-          <input type="time" class="form-control requiredInput" id="fromTimeInput" placeholder="00:00 PM">
+          <input type="time" class="form-control requiredInput" id="fromTimeInput" placeholder="From">
         </div>
-        <label class="control-label col-sm-1" for="toTimeInput">To:</label>
-        <div class="col-sm-2"> 
-          <input type="time" class="form-control requiredInput" id="toTimeInput" placeholder="00:00 PM">
+        <div class="col-sm-offset-1 col-sm-2"> 
+          <input type="time" class="form-control requiredInput" id="toTimeInput" placeholder="To">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-offset-2 col-sm-2" for="descriptionInput">Description:</label>
         <div class="col-sm-5"> 
-          <textarea type="text" class="form-control requiredInput" rows="10" id="descriptionInput" placeholder="Detailed Description"></textarea>
+          <textarea type="text" class="form-control requiredInput" rows="10" id="descriptionInput"></textarea>
         </div>
       </div>
       <div class="col-sm-offset-4 col-sm-1">
