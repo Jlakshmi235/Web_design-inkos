@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-/* Function for Landing Page news carousel */    
+/* Function for Landing Page */    
 	var clickEvent = false;
 	$('#myCarousel').carousel({
 		interval:   4000	
@@ -20,13 +20,6 @@ $(document).ready(function(){
 		}
 		clickEvent = false;
 	});
-
-$(window).load(function() {
-    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
-    var itemlength = $('#myCarousel .item').length;
-    var triggerheight = Math.round(boxheight/itemlength+1);
-	$('#myCarousel .list-group-item').outerHeight(triggerheight);
-});
 
 /* Function for Request Help Page */
 	$('.alert').hide();
@@ -77,4 +70,11 @@ $(window).load(function() {
 			}
 		}
 	});
+});
+
+$(window).load(function() {
+    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+    var itemlength = $('#myCarousel .item').length;
+    var triggerheight = Math.round(boxheight/itemlength+1);
+	$('#myCarousel .list-group-item').outerHeight(triggerheight);
 });
