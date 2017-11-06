@@ -37,4 +37,281 @@
   </nav>
   <!-- End of navigation bar -->
 
+<div class="container">
+    <form>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter your zipcode/address" id="searchbar">
+      <div class="input-group-btn">
+        <button class="btn btn-default" id="search-button" type="submit">
+          <i class="glyphicon glyphicon-search"></i>
+        </button>
+      </div>
+    </div>
+  </form>
+  </div>
+
+    <br />
+
+ <div class="container" id="table-div">
+<h1>Volunteer Requests in your area!</h1>
+
+<h3>Click on a request to learn more</h3>
+<br />
+    <table class="table"  id="vol-table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Distance</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="pop">
+          <td>10/22/2017<br/>[3:00PM - 7:00PM]</td>
+          <td>0.2 Miles</td>
+          <td>ABC organization is distributing 1000 disaster relief kits for people affected. Volunteers needed</td>
+        </tr>
+
+        <tr class="pop">
+          <td>10/22/2017<br/>[2:00PM - 3:00PM]</td>
+          <td>0.3 Miles</td>
+          <td>Lend your support to families affected in ...</td>
+        </tr>
+        <tr class="pop">
+          <td>10/22/2017<br/>[4:00PM - 6:00PM]</td>
+          <td>0.3 Miles</td>
+          <td>XYZ Corp. is giving out free meals to individuals in need.</td>
+        </tr>
+        <tr class="pop">
+          <td>10/22/2017<br/>[2:00PM - 3:00PM]</td>
+          <td>0.3 Miles</td>
+          <td>Volunteer your house as shelter for individuals/families who ahve lost their homes.</td>
+        </tr>
+        <tr class="pop">
+          <td>10/22/2017<br/>[4:00PM - 6:00PM]</td>
+          <td>0.5 Miles</td>
+          <td>Lend your support (financial,emotional) to families and individuals affected in storm.</td>
+        </tr>
+        <tr class="pop">
+          <td>10/23/2017<br/>[12:00PM - 3:00PM]</td>
+          <td>0.6 Miles</td>
+          <td>XYZ corporation is distributing 1500 disaster survival kits for people affected. Volunteers needed</td>
+        </tr>
+        <tr class="pop">
+          <td>10/23/2017<br/>[6:00PM - 9:00PM]</td>
+          <td>1.2 Miles</td>
+          <td>Lend your support to families affected in ...</td>
+        </tr>
+        <tr class="pop">
+          <td>10/23/2017<br/>[5:00PM - 10:00PM]</td>
+          <td>1.7 Miles</td>
+          <td>XYZ corp. is giving out free meals to families and individuals in need. Donations welcome.</td>
+        </tr>
+        <tr class="pop">
+          <td>10/24/2017<br/>[11:00AM - 3:00PM]</td>
+          <td>3.0 Miles</td>
+          <td>Volunteer your house as shelter for individuals/families who had their houses destroyed.</td>
+        </tr>
+        <tr class="pop">
+          <td>10/24/2017<br/>[4:00PM - 7:00PM]</td>
+          <td>3.7 Miles</td>
+          <td>Lend your support (financial, emotional, shelter) to families and individuals affected in storm.</td>
+        </tr>
+        <tr class="pop">
+          <td>10/25/2017<br/>[6:00PM - 9:00PM]</td>
+          <td>4.0 Miles</td>
+          <td>JKL Corp. has pledged the distribution of 500 free meals. VOlunteers required.</td>
+        </tr>
+        <tr class="pop">
+          <td>10/25/2017<br/>[11:00AM - 4:00PM]</td>
+          <td>4.3 Miles</td>
+          <td>Red Cross is putting together school kits to be distributed amongst children below 14 years.</td>
+        </tr>
+        <tr class="pop">
+          <td>10/25/2017<br/>[12:00PM - 2:00PM]</td>
+          <td>5.0 Miles</td>
+          <td>Lend your support to families affected in ....</td>
+        </tr>
+        <tr class="pop">
+          <td>10/25/2017<br/>[4:00PM - 6:00PM]</td>
+          <td>5.0 Miles</td>
+          <td>Volunteer to shelter individuals/families who have lost their homes.</td>
+        </tr>
+      </tbody>
+    </table>
+
+<div id="popover-head" class="hide">
+  Request Information:
+</div>
+
+
+  <div id="popover-content" class="hide">
+    <div class="container">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="name">Name:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="name" value="ABC Corporation" readonly>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="address">Address:</label>
+        <div class="col-sm-6"> 
+          <input type="text" class="form-control" id="address" value="2000 Sheridan Road" readonly>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="mobile">Mobile:</label>
+        <div class="col-sm-6"> 
+          <input type="tel" class="form-control" id="mobile" value="222-777-9999" readonly>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="email">E-Mail:</label>
+        <div class="col-sm-6"> 
+          <input type="email" class="form-control" id="email" value="abc@gmail.com" readonly>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="date">Date:</label>
+        <div class="col-sm-6"> 
+          <input type="text" class="form-control" id="date" value="10/22/2107" readonly>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="time">Time:</label>
+        <div class="col-sm-3"> 
+          <input type="text" class="form-control" id="fromtime" value="03:00 PM" readonly>
+        </div>
+        <div class="col-sm-3"> 
+          <input type="text" class="form-control" id="totime" placeholder="07:00 PM" readonly>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="text">Description:</label>
+        <div class="col-sm-6"> 
+          <textarea class="form-control" rows="10" id="description" readonly>ABC organization is distributing 1000 disaster relief kits for people affected. Volunteers needed"</textarea>
+        </div>
+      </div>
+      <div class="form-group"> 
+        <div class="col-sm-offset-5 col-sm-1">
+          <input type="button" class="btn btn-default" id="jj" value="Proceed"/>
+        </div>
+        <div class="col-sm-1">
+          <input type="button" class="btn btn-default" id="hh" value="Cancel"/>
+        </div>
+      </div>
+    </form>
+
+
+
+
+
+
+  </div>
+  </div>
+
+
+
+
+
+  <div class="container" id="volunteer-info">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="name">Name:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="name" placeholder="Enter Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="mobile">Mobile:</label>
+        <div class="col-sm-6"> 
+          <input type="tel" class="form-control" id="mobile" placeholder="Enter Mobile Number">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="email">E-Mail:</label>
+        <div class="col-sm-6"> 
+          <input type="email" class="form-control" id="email" placeholder="Enter E-mail Address">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="text">Description:</label>
+        <div class="col-sm-6"> 
+          <textarea class="form-control" rows="10" id="description" placeholder="Enter Description"></textarea>
+        </div>
+      </div>
+      <div class="form-group"> 
+        <div class="col-sm-offset-5 col-sm-1">
+          <input type="button" class="btn btn-default">Submit</button>
+        </div>
+        <div class="col-sm-1">
+          <input type="button" class="btn btn-default">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+  //$("#vol-table").hide();
+ 
+  $("#search-button").click(function(){
+      $("#table-div").show();
+      return false;
+    });
+});
+
+
+
+$('#jj').on('click', function(){
+  $("#lll").show();
+  return false;
+});
+
+
+
+
+$('.pop').popover({ 
+    placement: 'bottom',
+    html : true,
+    title: function() {
+      return $("#popover-head").html();
+    },
+    content: function() {
+      return $("#popover-content").html();
+    }
+});
+
+
+
+$('.pop').on('click', function (e) {
+    $('.pop').not(this).popover('hide');
+});
+
+
+
+$(document).ready(function(){
+    $("#vol-table").children("tbody").children("tr").children("td").click(function(){
+        $(this.parentNode).toggleClass("active");
+    });
+});
+
+
+</script>
+
+
+
 </body>
+
