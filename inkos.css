@@ -1,7 +1,4 @@
-body {margin-top:0;
-margin-right: 0;
-margin-left:0;
-margin-bottom: 20px;}
+body {margin:0;}
 
 /* Start of Navbar styles */
 #navBar {
@@ -85,3 +82,47 @@ margin-bottom: 20px;}
 	#myCarousel .carousel-controls {display:none;} 
 }
 
+.popover {
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+}
+
+
+#pad-div{
+	height: 150%;
+}
+
+#table-div {
+	display: none;
+}
+
+
+#vol-table {
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.vol-table:active{
+	background: yellow;
+}
+
+#volunteer-info{
+	display: none;
+}
+
+
+.highlight { 
+	background-color: #b5b7bc; 
+}
+
+.stop-scrolling{
+	height: 100%;
+	overflow: hidden;
+}
