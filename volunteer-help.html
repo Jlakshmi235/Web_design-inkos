@@ -9,10 +9,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="inkos.js"></script>
-
 </head>
-<body>
 
+<body>
   <!-- Start of navigation bar -->
   <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
     <div class="container-fluid">
@@ -26,120 +25,147 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
+          <li><a href="about-us.html">ABOUT US</a></li>
           <li><a href="how-to-survive.html">HOW TO SURVIVE</a></li>
           <li><a href="find-shelter.html">FIND SHELTER</a></li>
           <li><a href="request-help.html">REQUEST HELP</a></li>
           <li class="active"><a href="volunteer-help.html">VOLUNTEER HELP</a></li>
         </ul>
-
       </div>
     </div>
   </nav>
   <!-- End of navigation bar -->
 
-  <div class="container" id="pad-div"><br /><br />
-    <h2>Find a volunteering event near you!</h2>
-    <br />
-  </div>
+  <!-- Start of volunteer help page -->
   <div class="container">
-    <form>
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Enter your zipcode/address" id="searchbar">
-      <div class="input-group-btn">
-        <button class="btn btn-default" id="search-button" type="submit">
-          <i class="glyphicon glyphicon-search"></i>
-        </button>
+    <h3 class="pageTitle">Find a volunteer event near you</h3>
+    <p>Search for the nearest events from listings and submit your information to participate</p>
+    </br>
+    <!-- Empty search alert -->
+  	<div class="alert alert-danger" id="emptySearchAlert" role="alert">
+       <strong>Error!</strong> Search bar is empty
+    </div>
+    <!-- Search bar -->
+  	<form>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter ZIP Code or Address" id="searchbar">
+        <div class="input-group-btn">
+          <button class="btn btn-default" id="search-button" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
       </div>
-    </div>
-  </form>
-  <br />
-    <div class="alert alert-danger" id="emptySearchAlert" role="alert">
-       Please enter a zipcode/address in the search bar
-    </div>
+    </form>
   </div>
-
-  <br />
-
+  </br>
+  <!-- Volunteer events table -->
   <div class="container" id="table-div">
-    <h1>Volunteer Requests in your area!</h1>
-    <h3>Click on a request to learn more</h3>
-    <br />
     <table class="table"  id="vol-table">
+      <p id="clickInstructions">Click on an event to volunteer</p>
       <thead>
         <tr>
+          <th>Date</th>
           <th>Time</th>
           <th>Distance</th>
           <th>Description</th>
         </tr>
       </thead>
       <tbody>
+        <!-- Event 0 -->
         <tr data-toggle="modal" data-id="0" data-target="#form-modal">
-          <td>10/22/2017<br/>[3:00PM - 7:00PM]</td>
+          <td>10/22/2017</td>
+          <td>3:00PM - 7:00PM</td>
           <td>0.2 Miles</td>
           <td>ABC organization is distributing 1000 disaster relief kits for people affected. Volunteers needed</td>
         </tr>
+        <!-- Event 1 -->
         <tr data-toggle="modal" data-id="1" data-target="#form-modal">
-          <td>10/22/2017<br/>[2:00PM - 3:00PM]</td>
+          <td>10/22/2017</td>
+          <td>2:00PM - 3:00PM</td>
           <td>0.3 Miles</td>
           <td>Lend your support to families affected in ...</td>
         </tr>
+        <!-- Event 2 -->
         <tr data-toggle="modal" data-id="2" data-target="#form-modal">
-          <td>10/22/2017<br/>[4:00PM - 6:00PM]</td>
+          <td>10/22/2017</td>
+          <td>4:00PM - 6:00PM</td>
           <td>0.3 Miles</td>
           <td>XYZ Corp. is giving out free meals to individuals in need.</td>
         </tr>
+        <!-- Event 3 -->
         <tr data-toggle="modal" data-id="3" data-target="#form-modal">
-          <td>10/22/2017<br/>[2:00PM - 3:00PM]</td>
+          <td>10/22/2017</td>
+          <td>2:00PM - 3:00PM</td>
           <td>0.3 Miles</td>
           <td>Volunteer your house as shelter for individuals/families who have lost their homes.</td>
         </tr>
+        <!-- Event 4 -->
         <tr data-toggle="modal" data-id="4" data-target="#form-modal">
-          <td>10/22/2017<br/>[4:00PM - 6:00PM]</td>
+          <td>10/22/2017</td>
+          <td>4:00PM - 6:00PM</td>
           <td>0.5 Miles</td>
           <td>Lend your support (financial,emotional) to families and individuals affected in storm.</td>
         </tr>
+        <!-- Event 5 -->
         <tr data-toggle="modal" data-id="5" data-target="#form-modal">
-          <td>10/23/2017<br/>[12:00PM - 3:00PM]</td>
+          <td>10/23/2017</td>
+          <td>12:00PM - 3:00PM</td>
           <td>0.6 Miles</td>
           <td>XYZ corporation is distributing 1500 disaster survival kits for people affected. Volunteers needed</td>
         </tr>
+        <!-- Event 6 -->
         <tr data-toggle="modal" data-id="6" data-target="#form-modal">
-          <td>10/23/2017<br/>[6:00PM - 9:00PM]</td>
+          <td>10/23/2017</td>
+          <td>6:00PM - 9:00PM</td>
           <td>1.2 Miles</td>
           <td>Lend your support to families affected in ...</td>
         </tr>
+        <!-- Event 7 -->
         <tr data-toggle="modal" data-id="7" data-target="#form-modal">
-          <td>10/23/2017<br/>[5:00PM - 10:00PM]</td>
+          <td>10/23/2017</td>
+          <td>5:00PM - 10:00PM</td>
           <td>1.7 Miles</td>
           <td>XYZ corp. is giving out free meals to families and individuals in need. Donations welcome.</td>
         </tr>
+        <!-- Event 8 -->
         <tr data-toggle="modal" data-id="8" data-target="#form-modal">
-          <td>10/24/2017<br/>[11:00AM - 3:00PM]</td>
+          <td>10/24/2017</td>
+          <td>11:00AM - 3:00PM</td>
           <td>3.0 Miles</td>
           <td>Volunteer your house as shelter for individuals/families who had their houses destroyed.</td>
         </tr>
+        <!-- Event 9 -->
         <tr data-toggle="modal" data-id="9" data-target="#form-modal">
-          <td>10/24/2017<br/>[4:00PM - 7:00PM]</td>
+          <td>10/24/2017</td>
+          <td>4:00PM - 7:00PM</td>
           <td>3.7 Miles</td>
           <td>Lend your support (financial, emotional, shelter) to families and individuals affected in storm.</td>
         </tr>
+        <!-- Event 10 -->
         <tr data-toggle="modal" data-id="10" data-target="#form-modal">
-          <td>10/25/2017<br/>[6:00PM - 9:00PM]</td>
+          <td>10/25/2017</td>
+          <td>6:00PM - 9:00PM</td>
           <td>4.0 Miles</td>
           <td>JKL Corp. has pledged the distribution of 500 free meals. Volunteers required.</td>
         </tr>
+        <!-- Event 11 -->
         <tr data-toggle="modal" data-id="11" data-target="#form-modal">
-          <td>10/25/2017<br/>[11:00AM - 4:00PM]</td>
+          <td>10/25/2017</td>
+          <td>11:00AM - 4:00PM</td>
           <td>4.3 Miles</td>
           <td>Red Cross is putting together school kits to be distributed amongst children below 14 years.</td>
         </tr>
+        <!-- Event 12 -->
         <tr data-toggle="modal" data-id="12" data-target="#form-modal">
-          <td>10/25/2017<br/>[12:00PM - 2:00PM]</td>
+          <td>10/25/2017</td>
+          <td>12:00PM - 2:00PM</td>
           <td>5.0 Miles</td>
           <td>Lend your support to families affected in ....</td>
         </tr>
+        <!-- Event 13 -->
         <tr data-toggle="modal" data-id="13" data-target="#form-modal">
-          <td>10/25/2017<br/>[4:00PM - 6:00PM]</td>
+          <td>10/25/2017</td>
+          <td>4:00PM - 6:00PM</td>
           <td>5.0 Miles</td>
           <td>Volunteer to shelter individuals/families who have lost their homes.</td>
         </tr>
@@ -147,119 +173,132 @@
     </table>
   </div>
 
-
-
-
-
+  <!-- Modal -->
   <div id="form-modal" class="modal fade" role="dialog" aria-labelledby="orderModal" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
+        <!-- Modal header -->
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-          <h3 id="modalHead">Your help is needed</h3>
+          <h4 id="modal-header-title">Requester Information</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         </div>
-        <div id="orderDetails" class="modal-body"></div>
-        <div id="orderItems" class="modal-body"></div>
-     
+
+        <!-- Modal body for requester information -->
         <form class="form-horizontal" id="info-form">
+          </br>
+          <!-- Name -->
           <div class="form-group">
             <label class="control-label col-sm-offset-1 col-sm-2" for="name">Name:</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control" id="name" value="ABC Corporation" readonly>
+              <p class="form-control-static" id="name"></p>
             </div>
           </div>
+          <!-- Address -->
           <div class="form-group">
             <label class="control-label col-sm-offset-1 col-sm-2" for="address">Address:</label>
             <div class="col-sm-6"> 
-              <input type="text" class="form-control" id="address" value="2000 Sheridan Road" readonly>
+              <p class="form-control-static" id="address"></p>
+            </div>
+          </div>
+          <!-- Contacts -->
+          <div class="form-group">
+            <label class="control-label col-sm-offset-1 col-sm-2" for="mobile">Contacts:</label>
+            <div class="col-sm-6"> 
+              <p class="form-control-static" id="mobile"></p>
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-offset-1 col-sm-2" for="mobile">Mobile:</label>
-            <div class="col-sm-6"> 
-              <input type="tel" class="form-control" id="mobile" value="222-777-9999" readonly>
+            <div class="col-sm-offset-3 col-sm-6"> 
+              <p class="form-control-static" id="email"></p>
             </div>
           </div>
-          <div class="form-group">
-            <label class="control-label col-sm-offset-1 col-sm-2" for="email">E-Mail:</label>
-            <div class="col-sm-6"> 
-              <input type="email" class="form-control" id="email" value="abc@gmail.com" readonly>
-            </div>
-          </div>
+          <!-- Date -->
           <div class="form-group">
             <label class="control-label col-sm-offset-1 col-sm-2" for="date">Date:</label>
             <div class="col-sm-6"> 
-              <input type="text" class="form-control" id="date" value="10/22/2107" readonly>
+              <p class="form-control-static" id="date"></p>
             </div>
           </div>
+          <!-- Time -->
           <div class="form-group">
             <label class="control-label col-sm-offset-1 col-sm-2" for="time">Time:</label>
-            <div class="col-sm-3"> 
-              <input type="text" class="form-control" id="fromtime" value="03:00 PM" readonly>
-            </div>
-            <div class="col-sm-3"> 
-              <input type="text" class="form-control" id="totime" placeholder="07:00 PM" readonly>
+            <div class="col-sm-6"> 
+              <p class="form-control-static" id="times"></p>
             </div>
           </div>
+          <!-- Description -->
           <div class="form-group">
             <label class="control-label col-sm-offset-1 col-sm-2" for="text">Description:</label>
             <div class="col-sm-6"> 
-              <textarea class="form-control" rows="10" id="description" readonly>ABC organization is distributing 1000 disaster relief kits for people affected. Volunteers needed"</textarea>
+              <p class="form-control-static" id="description"></p>
             </div>
           </div>
-          <div class="col-sm-offset-5 col-sm-1">
-            <input type="button" class="btn btn-success" id="volunteer-button" value="Volunteer!"/>
+          </br>
+          <!-- Buttons -->
+          <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-1">
+              <button type="button" class="btn btn-success" id="volunteer-button" role="button">Volunteer</button>
+            </div>
+            <div class="col-sm-offset-1 col-sm-1">
+              <button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
+            </div>
           </div>
         </form>
 
+        <!-- Empty field alert -->
         <div class="alert alert-danger" id="emptyFieldAlert" role="alert">
-          <strong>Error!</strong> One or more necessary fields are empty.
+          <strong>Error!</strong> One or more required fields are empty.
         </div>
+        <!-- Submit success alert -->
         <div class="alert alert-success alert-dismissable" id="submitSuccessAlert" role="alert">
           <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
           <strong>Success!</strong> Your information has been forwarded to the requester.
         </div>
+        <!-- Modal body for volunteer information -->
         <form class="hide form-horizontal" id="user-entry">
+          </br>
+          <!-- Name -->
           <div class="form-group">
-            <label class="control-label col-sm-offset-1 col-sm-2" for="name">Name:</label>
+            <label class="control-label col-sm-offset-1 col-sm-2" for="nameInput">Name:</label>
             <div class="col-sm-6">
-              <input type="text" class="form-control requiredInput" id="name_in" placeholder="Enter Name">
+              <input type="text" class="form-control requiredInput" id="nameInput" placeholder="Name">
+            </div>
+          </div>
+          <!-- Contacts -->
+          <div class="form-group">
+            <label class="control-label col-sm-offset-1 col-sm-2" for="phoneInput">Contacts:</label>
+            <div class="col-sm-6"> 
+              <input type="tel" class="form-control requiredInput" id="phoneInput" placeholder="Phone Number">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-offset-1 col-sm-2" for="mobile">Mobile:</label>
-            <div class="col-sm-6"> 
-              <input type="tel" class="form-control requiredInput" id="mobile_in" placeholder="Enter Mobile Number">
+            <div class="col-sm-offset-3 col-sm-6"> 
+              <input type="email" class="form-control requiredInput" id="emailInput" placeholder="E-Mail Address">
             </div>
           </div>
+          <!-- Description -->
           <div class="form-group">
-            <label class="control-label col-sm-offset-1 col-sm-2" for="email">E-Mail:</label>
+            <label class="control-label col-sm-offset-1 col-sm-2" for="description">Description:</label>
             <div class="col-sm-6"> 
-              <input type="email" class="form-control requiredInput" id="email_in" placeholder="Enter E-mail Address">
+              <textarea type="text" class="form-control" rows="10" id="descriptionInput" placeholder="Description"></textarea>
             </div>
           </div>
+          <!-- Buttons -->
           <div class="form-group">
-            <label class="control-label col-sm-offset-1 col-sm-2" for="text">Description:</label>
-            <div class="col-sm-6"> 
-              <textarea class="form-control" rows="10" id="description_in" placeholder="Enter Description"></textarea>
+            <div class="col-sm-offset-4 col-sm-1">
+              <button type="button" class="btn btn-success" id="submitVolButton" role="button">Submit</button>
             </div>
-          </div>
-          <div class="form-group"> 
-            <div class="col-sm-offset-5 col-sm-1">
-              <input type="button" class="btn btn-success" value="Submit" id="submitVolButton" />
+            <div class="col-sm-offset-1 col-sm-1">
+              <button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
             </div>
           </div>
         </form>
-
-        <br /><br /><br />
-
-        <div class="modal-footer">
-          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        </div>
       </div>
     </div>
   </div>
+  <!-- End of volunteer help page -->
 
 </body>
+</html>
 
 

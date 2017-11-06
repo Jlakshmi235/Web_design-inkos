@@ -9,10 +9,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="inkos.js"></script>
-
 </head>
-<body>
 
+<body>
   <!-- Start of navigation bar -->
   <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
     <div class="container-fluid">
@@ -26,6 +25,7 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
+          <li><a href="about-us.html">ABOUT US</a></li>
           <li><a href="how-to-survive.html">HOW TO SURVIVE</a></li>
           <li><a href="find-shelter.html">FIND SHELTER</a></li>
           <li class="active"><a href="request-help.html">REQUEST HELP</a></li>
@@ -36,30 +36,39 @@
   </nav>
   <!-- End of navigation bar -->
 
+  <!-- Start of request help page -->
   <div class="container">
+    <h3 class="pageTitle">Make a request for help to your location</h3>
+    <p>Submit your information to post your request on the website listings.</p>
+    </br>
+    <!-- Empty field alert -->
     <div class="alert alert-danger" id="emptyFieldAlert" role="alert">
-      <strong>Error!</strong> One or more necessary fields are empty.
+      <strong>Error!</strong> One or more required fields are empty.
     </div>
+    <!-- Submit success alert -->
     <div class="alert alert-success alert-dismissable" id="submitSuccessAlert" role="alert">
       <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
       <strong>Success!</strong> Your request has been submitted.
     </div>
-
+    <!-- Request help form -->
     <form class="form-horizontal" id="informationForm">
+      </br>
+      <!-- Name -->
       <div class="form-group">
-        <label class="control-label col-sm-offset-2 col-sm-2" for="nameInput">Name:</label>
-        <div class="col-sm-5">
+        <label class="control-label col-sm-offset-1 col-sm-2" for="nameInput">Name:</label>
+        <div class="col-sm-6">
           <input type="text" class="form-control requiredInput" id="nameInput" placeholder="Name">
         </div>
       </div>
+      <!-- Address -->
       <div class="form-group">
-        <label class="control-label col-sm-offset-2 col-sm-2" for="streetInput">Address:</label>
-        <div class="col-sm-5"> 
+        <label class="control-label col-sm-offset-1 col-sm-2" for="streetInput">Address:</label>
+        <div class="col-sm-6"> 
           <input type="text" class="form-control requiredInput" id="streetInput" placeholder="Street">
         </div>
       </div>
       <div class="form-group">
-        <div class="col-sm-offset-4 col-sm-2"> 
+        <div class="col-sm-offset-3 col-sm-3"> 
           <input type="text" class="form-control requiredInput" id="cityInput" placeholder="City">
         </div>
         <div class="col-sm-1"> 
@@ -120,44 +129,54 @@
           <input type="text" class="form-control requiredInput" id="zipInput" placeholder="ZIP Code">
         </div>
       </div>
+      <!-- Contacts -->
       <div class="form-group">
-        <label class="control-label col-sm-offset-2 col-sm-2" for="phoneInput">Contacts:</label>
-        <div class="col-sm-5"> 
+        <label class="control-label col-sm-offset-1 col-sm-2" for="phoneInput">Contacts:</label>
+        <div class="col-sm-6"> 
           <input type="tel" class="form-control requiredInput" id="phoneInput" placeholder="Phone Number">
         </div>
       </div>
       <div class="form-group">
-        <div class="col-sm-offset-4 col-sm-5"> 
+        <div class="col-sm-offset-3 col-sm-6"> 
           <input type="email" class="form-control requiredInput" id="emailInput" placeholder="E-Mail Address">
         </div>
       </div>
+      <!-- Date -->
       <div class="form-group">
-        <label class="control-label col-sm-offset-2 col-sm-2" for="dateInput">Date:</label>
-        <div class="col-sm-5"> 
+        <label class="control-label col-sm-offset-1 col-sm-2" for="dateInput">Date:</label>
+        <div class="col-sm-6"> 
           <input type="date" class="form-control requiredInput" id="dateInput" placeholder="Date">
         </div>
       </div>
+      <!-- Time -->
       <div class="form-group">
-        <label class="control-label col-sm-offset-2 col-sm-2" for="fromTimeInput">Time:</label>
-        <div class="col-sm-2"> 
+        <label class="control-label col-sm-offset-1 col-sm-2" for="fromTimeInput">Time:</label>
+        <div class="col-sm-3"> 
           <input type="time" class="form-control requiredInput" id="fromTimeInput" placeholder="From">
         </div>
-        <div class="col-sm-offset-1 col-sm-2"> 
+        <div class="col-sm-3"> 
           <input type="time" class="form-control requiredInput" id="toTimeInput" placeholder="To">
         </div>
       </div>
+      <!-- Description -->
       <div class="form-group">
-        <label class="control-label col-sm-offset-2 col-sm-2" for="descriptionInput">Description:</label>
-        <div class="col-sm-5"> 
+        <label class="control-label col-sm-offset-1 col-sm-2" for="descriptionInput">Description:</label>
+        <div class="col-sm-6"> 
           <textarea type="text" class="form-control requiredInput" rows="10" id="descriptionInput"></textarea>
         </div>
       </div>
-      <div class="col-sm-offset-4 col-sm-1">
-        <button type="button" id="submitButton" class="btn btn-success" role="button">Submit</button>
-      </div>
-      <div class="col-sm-1">
-        <a href="request-help.html" id="cancelButton" class="btn btn-danger" role="button">Cancel</a>
+      <!-- Buttons -->
+      <div class="form-group">
+        <div class="col-sm-offset-5 col-sm-1">
+          <button type="button" id="submitButton" class="btn btn-success" role="button">Submit</button>
+        </div>
+        <div class="col-sm-1">
+          <a href="request-help.html" id="cancelButton" class="btn btn-danger" role="button">Cancel</a>
+        </div>
       </div>
     </form>
   </div>
+  <!-- End of request help page -->
+
 </body>
+</html>
