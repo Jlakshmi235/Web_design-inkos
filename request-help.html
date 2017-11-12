@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <!-- Start of navigation bar -->
   <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
     <div class="container-fluid">
@@ -38,21 +39,25 @@
 
   <!-- Start of request help page -->
   <div class="container">
-    <h3 class="pageTitle">Make a request for help to your location</h3>
+    <h3>Make a request for help to your location</h3>
     <p>Submit your information to post your request on the website listings.</p>
     </br>
+
     <!-- Empty field alert -->
     <div class="alert alert-danger" id="emptyFieldAlert" role="alert">
       <strong>Error!</strong> One or more required fields are empty.
     </div>
+
     <!-- Submit success alert -->
     <div class="alert alert-success alert-dismissable" id="submitSuccessAlert" role="alert">
       <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
       <strong>Success!</strong> Your request has been posted on the website listings.
     </div>
+
     <!-- Request help form -->
-    <form class="form-horizontal" id="informationForm">
+    <form class="form-horizontal" id="requestUserEntry">
       </br>
+
       <!-- Name -->
       <div class="form-group">
         <label class="control-label col-sm-offset-1 col-sm-2" for="nameInput">Name:</label>
@@ -60,6 +65,7 @@
           <input type="text" class="form-control requiredInput" id="nameInput" placeholder="Name">
         </div>
       </div>
+
       <!-- Address -->
       <div class="form-group">
         <label class="control-label col-sm-offset-1 col-sm-2" for="streetInput">Address:</label>
@@ -129,6 +135,7 @@
           <input type="text" class="form-control requiredInput" id="zipInput" placeholder="ZIP Code">
         </div>
       </div>
+
       <!-- Contacts -->
       <div class="form-group">
         <label class="control-label col-sm-offset-1 col-sm-2" for="phoneInput">Contacts:</label>
@@ -141,6 +148,7 @@
           <input type="email" class="form-control requiredInput" id="emailInput" placeholder="E-Mail Address">
         </div>
       </div>
+
       <!-- Date -->
       <div class="form-group">
         <label class="control-label col-sm-offset-1 col-sm-2" for="dateInput">Date:</label>
@@ -148,6 +156,7 @@
           <input type="date" class="form-control requiredInput" id="dateInput" placeholder="Date">
         </div>
       </div>
+
       <!-- Time -->
       <div class="form-group">
         <label class="control-label col-sm-offset-1 col-sm-2" for="fromTimeInput">Time:</label>
@@ -158,6 +167,7 @@
           <input type="time" class="form-control requiredInput" id="toTimeInput" placeholder="To">
         </div>
       </div>
+
       <!-- Description -->
       <div class="form-group">
         <label class="control-label col-sm-offset-1 col-sm-2" for="descriptionInput">Description:</label>
@@ -165,13 +175,14 @@
           <textarea type="text" class="form-control requiredInput" rows="10" id="descriptionInput"></textarea>
         </div>
       </div>
+
       <!-- Buttons -->
       <div class="form-group">
         <div class="col-sm-offset-5 col-sm-1">
-          <button type="button" id="submitButton" class="btn btn-success" role="button">Submit</button>
+          <button type="button" id="requestSubmitButton" class="btn btn-success" role="button">Submit</button>
         </div>
         <div class="col-sm-1">
-          <a href="request-help.html" id="cancelButton" class="btn btn-danger" role="button">Cancel</a>
+          <a href="request-help.html" id="requestCancelButton" class="btn btn-danger" role="button">Cancel</a>
         </div>
       </div>
     </form>
