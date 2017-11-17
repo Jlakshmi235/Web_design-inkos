@@ -1,10 +1,8 @@
 body {margin:0;}
 
-/* Common CSS */
-
-/* Navigation Bar */
+/* Start of Navbar styles */
 #navBar {
-	height: 70px;
+	height:70px;
 }
 
 .navbar{
@@ -14,17 +12,17 @@ body {margin:0;}
 
 .navbar .navbar-collapse{
 	position: relative;
-	top: 12px;
+	top:12px;
 	font-size: 14px;
 }
 
 .navbar-brand {
-	position:relative; top: -14px;
-	z-index: 1;
+	position:relative; top:-14px;
+	z-index:1;
 }
 
 .navbar-inverse .navbar-nav>li> a{
-	color: #ccc;
+	color:#ccc;
 }
 
 .navbar-inverse .navbar-nav>.active> a, 
@@ -32,30 +30,13 @@ body {margin:0;}
 .navbar-inverse .navbar-nav>.active> a:hover {
   background: #163c7a;
 }
+/* End of Navbar styles */
 
-/* Instruction Font */
-#clickInstructions{
-	font-size: 14px;
-	font-style: italic;
-}
-
-/* Table Style */
-.highlight { 
-	background-color: #b5b7bc; 
-}
-
-.stop-scrolling{
-	height: 100%;
-	overflow: hidden;
-}
-
-/* CSS for Index Page */
-
-/* Weather Bar */
 .panel-default{
-	border-radius: 0px;
+	border-radius:0px;
 }
 
+/* Start of Weather bar styles */
 #weather{
 	background-color: #eee;
 }
@@ -79,8 +60,8 @@ body {margin:0;}
 	text-decoration: none;
 	color: #555;
 }
+/* End of Weather bar styles */
 
-/* Carousel */
 #myCarousel .carousel-caption {
     left:0;
 	right:0;
@@ -135,15 +116,36 @@ body {margin:0;}
 	#myCarousel .carousel-controls {display:none;} 
 }
 
-/* CSS for Volunteer Help Page */
+.pageTitle{
+	text-align: left;
+}
 
-/* Volunteer Table */
-#volTableDiv {
+#clickInstructions{
+	font-size: 14px;
+	font-style: italic;
+}
+
+.popover {
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+}
+
+#pad-div{
+	height: 150%;
+}
+
+#modal-header-title{
+	display: inline;
+}
+
+#table-div {
 	display: none;
 }
 
 
-#volTable {
+#vol-table {
 	cursor: pointer;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -153,50 +155,54 @@ body {margin:0;}
     user-select: none;
 }
 
-.volTable:active{
+.vol-table:active{
 	background: yellow;
 }
 
-/* Volunteer Modal */
-#volunteerModalHeader{
-	display: inline;
-	font-size: 16px;
-}
-
-/* CSS for Find Shelter Page */
-
-/* Shelter Map Image */
-#shelterMapImage{
-	max-width: 75%;
-	height: auto;
-}
-
-/* Shelter Table */
-#shelterTableDiv {
+#volunteer-info{
 	display: none;
 }
 
 
-#shelterTable {
-	cursor: pointer;
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.highlight { 
+	background-color: #b5b7bc; 
 }
 
-.shelterTable:active{
-	background: yellow;
+.stop-scrolling{
+	height: 100%;
+	overflow: hidden;
 }
 
-/* Shelter Modal */
-#shelterImage{
-	max-width: 50%
+
+.disasters-table {
+    width:100%;
+    table-layout: fixed;
+
+
+
+
+}
+	
+.disasters-cell {
+    height:50px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0.5px solid;
+    background-color: #4067a5;
+    
+    
 }
 
-#shelterModalHeader{
-	display: inline;
-	font-size: 16px;
+#navBar2 {
+	height:180px;
+}
+
+
+
+.text-box {
+   
+    font-size: 18px;
+    /*background-color: #4067a5;*/
+    
+    
 }
