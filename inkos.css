@@ -1,8 +1,10 @@
 body {margin:0;}
 
-/* Start of Navbar styles */
+/* Common CSS */
+
+/* Navigation Bar */
 #navBar {
-	height:70px;
+	height: 70px;
 }
 
 .navbar{
@@ -12,17 +14,17 @@ body {margin:0;}
 
 .navbar .navbar-collapse{
 	position: relative;
-	top:12px;
+	top: 12px;
 	font-size: 14px;
 }
 
 .navbar-brand {
-	position:relative; top:-14px;
-	z-index:1;
+	position:relative; top: -14px;
+	z-index: 1;
 }
 
 .navbar-inverse .navbar-nav>li> a{
-	color:#ccc;
+	color: #ccc;
 }
 
 .navbar-inverse .navbar-nav>.active> a, 
@@ -30,13 +32,36 @@ body {margin:0;}
 .navbar-inverse .navbar-nav>.active> a:hover {
   background: #163c7a;
 }
-/* End of Navbar styles */
 
-.panel-default{
-	border-radius:0px;
+.navbar-inverse .navbar-nav>.slogan{
+	font-size: 14px;
+	font-style: italic;
+	color: white;
 }
 
-/* Start of Weather bar styles */
+/* Instruction Font */
+#clickInstructions{
+	font-size: 14px;
+	font-style: italic;
+}
+
+/* Table Style */
+.highlight { 
+	background-color: #b5b7bc; 
+}
+
+.stop-scrolling{
+	height: 100%;
+	overflow: hidden;
+}
+
+/* CSS for Index Page */
+
+/* Weather Bar */
+.panel-default{
+	border-radius: 0px;
+}
+
 #weather{
 	background-color: #eee;
 }
@@ -60,8 +85,8 @@ body {margin:0;}
 	text-decoration: none;
 	color: #555;
 }
-/* End of Weather bar styles */
 
+/* Carousel */
 #myCarousel .carousel-caption {
     left:0;
 	right:0;
@@ -116,36 +141,15 @@ body {margin:0;}
 	#myCarousel .carousel-controls {display:none;} 
 }
 
-.pageTitle{
-	text-align: left;
-}
+/* CSS for Volunteer Help Page */
 
-#clickInstructions{
-	font-size: 14px;
-	font-style: italic;
-}
-
-.popover {
-    width: auto;
-    height: auto;
-    max-width: none;
-    max-height: none;
-}
-
-#pad-div{
-	height: 150%;
-}
-
-#modal-header-title{
-	display: inline;
-}
-
-#table-div {
+/* Volunteer Table */
+#volTableDiv {
 	display: none;
 }
 
 
-#vol-table {
+#volTable {
 	cursor: pointer;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -155,54 +159,98 @@ body {margin:0;}
     user-select: none;
 }
 
-.vol-table:active{
+.volTable:active{
 	background: yellow;
 }
 
-#volunteer-info{
+/* Volunteer Modal */
+#volunteerModalHeader{
+	display: inline;
+	font-size: 16px;
+}
+
+/* CSS for Find Shelter Page */
+
+/* Shelter Map Image */
+#shelterMapImage{
+	max-width: 75%;
+	height: auto;
+}
+
+/* Shelter Table */
+#shelterTableDiv {
 	display: none;
 }
 
 
-.highlight { 
-	background-color: #b5b7bc; 
+#shelterTable {
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.stop-scrolling{
-	height: 100%;
-	overflow: hidden;
+.shelterTable:active{
+	background: yellow;
 }
 
+/* Shelter Modal */
+#shelterImage{
+	max-width: 50%
+}
 
+#shelterModalHeader{
+	display: inline;
+	font-size: 16px;
+}
+
+/* CSS for How to Survive Page */
+
+/* Navigation table */
 .disasters-table {
-    width:100%;
+	width: 100%;
     table-layout: fixed;
-
-
-
-
 }
 	
 .disasters-cell {
-    height:50px;
-    font-size: 15px;
-    font-weight: bold;
     border: 0.5px solid;
-    background-color: #4067a5;
-    
-    
+    background-color: #4067a5;   
 }
 
-#navBar2 {
-	height:180px;
+.disasters-cell> a> p:focus,
+.disasters-cell> a> p:hover{
+	color: white;
 }
 
+.selected{
+	background-color: #163c7a;
+}
 
+.selected> a> p{
+	color: white;
+}
 
+.link-box{
+	font-size: 16px;
+	text-align: center;
+}
+
+.image-icon{
+	max-height: 15%;
+	max-width: 15%;
+}
+
+.text-icon{
+	font-size: 15px;
+	font-weight: normal;
+	display: inline;
+	color: #ccc;
+}
+
+/* Instructions text */
 .text-box {
-   
     font-size: 18px;
-    /*background-color: #4067a5;*/
-    
-    
 }
