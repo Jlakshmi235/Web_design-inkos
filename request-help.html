@@ -26,7 +26,6 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="about-us.html">ABOUT US</a></li>
           <li><a href="how-to-survive.html">HOW TO SURVIVE</a></li>
           <li><a href="find-shelter.html">FIND SHELTER</a></li>
           <li class="active"><a href="request-help.html">REQUEST HELP</a></li>
@@ -59,24 +58,29 @@
 
     <!-- Request help form -->
     <form class="form-horizontal" id="requestUserEntry">
-      </br>
+      <div class="container" id="requestUserEntrySuccess">
+        </br>
+        <p>Your request has been posted to the Inkos Volunteer Help listings!</p>
+        <a href="volunteer-help.html">Click here to visit the Volunteer Help page.</a>
+      </div>
 
       <!-- Name -->
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="nameInput">Name:</label>
+      <div class="form-group requestUserEntryContent">
+        </br>
+        <label class="control-label col-sm-offset-0 col-sm-3" for="nameInput">What is your name?</label>
         <div class="col-sm-6">
           <input type="text" class="form-control requiredInput" id="nameInput" placeholder="Name">
         </div>
       </div>
 
       <!-- Address -->
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="streetInput">Address:</label>
+      <div class="form-group requestUserEntryContent">
+        <label class="control-label col-sm-offset-0 col-sm-3" for="streetInput">Where do you need help?</label>
         <div class="col-sm-6"> 
           <input type="text" class="form-control requiredInput" id="streetInput" placeholder="Street">
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-group requestUserEntryContent">
         <div class="col-sm-offset-3 col-sm-3"> 
           <input type="text" class="form-control requiredInput" id="cityInput" placeholder="City">
         </div>
@@ -140,47 +144,46 @@
       </div>
 
       <!-- Contacts -->
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="phoneInput">Contacts:</label>
+      <div class="form-group requestUserEntryContent">
+        <label class="control-label col-sm-offset-0 col-sm-3" for="phoneInput">How can we contact you?</label>
         <div class="col-sm-6"> 
-          <input type="tel" class="form-control requiredInput" id="phoneInput" placeholder="Phone Number">
+          <input type="tel" class="form-control requiredInput" id="phoneInput" placeholder="Phone Number (ex. 000-000-0000)">
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-group requestUserEntryContent">
         <div class="col-sm-offset-3 col-sm-6"> 
           <input type="email" class="form-control requiredInput" id="emailInput" placeholder="E-Mail Address">
         </div>
       </div>
 
       <!-- Date -->
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="dateInput">Date:</label>
+      <div class="form-group requestUserEntryContent">
+        <label class="control-label col-sm-offset-0 col-sm-3" for="dateInput">When do you need help?</label>
         <div class="col-sm-6"> 
           <input type="date" class="form-control requiredInput" id="dateInput" placeholder="Date">
         </div>
       </div>
 
       <!-- Time -->
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="fromTimeInput">Time:</label>
-        <div class="col-sm-3"> 
-          <input type="time" class="form-control requiredInput" id="fromTimeInput" placeholder="From">
+      <div class="form-group requestUserEntryContent">
+        <div class="col-sm-offset-3 col-sm-3"> 
+          <input type="text" class="form-control requiredInput" id="fromTimeInput" placeholder="From (ex. 00:00 AM)">
         </div>
         <div class="col-sm-3"> 
-          <input type="time" class="form-control requiredInput" id="toTimeInput" placeholder="To">
+          <input type="text" class="form-control requiredInput" id="toTimeInput" placeholder="To (ex. 00:00 PM)">
         </div>
       </div>
 
       <!-- Description -->
-      <div class="form-group">
-        <label class="control-label col-sm-offset-1 col-sm-2" for="descriptionInput">Description:</label>
+      <div class="form-group requestUserEntryContent">
+        <label class="control-label col-sm-offset-0 col-sm-3" for="descriptionInput">What do you need help with?</label>
         <div class="col-sm-6"> 
           <textarea type="text" class="form-control requiredInput" rows="10" id="descriptionInput"></textarea>
         </div>
       </div>
 
       <!-- Buttons -->
-      <div class="form-group">
+      <div class="form-group requestUserEntryContent">
         <div class="col-sm-offset-5 col-sm-1">
           <button type="button" id="requestSubmitButton" class="btn btn-success" role="button">Submit</button>
         </div>
@@ -189,6 +192,7 @@
         </div>
       </div>
     </form>
+
   </div>
   <!-- End of request help page -->
 

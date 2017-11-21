@@ -25,7 +25,6 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="about-us.html">ABOUT US</a></li>
           <li><a href="how-to-survive.html">HOW TO SURVIVE</a></li>
           <li><a href="find-shelter.html">FIND SHELTER</a></li>
           <li><a href="request-help.html">REQUEST HELP</a></li>
@@ -268,7 +267,7 @@
               <button type="button" class="btn btn-success" id="volunteerVolunteerButton" role="button">Volunteer</button>
             </div>
             <div class="col-sm-offset-1 col-sm-1">
-              <button type="button" class="btn btn-danger" id="volunteerCancelButton" data-dismiss="modal" aria-hidden="true">Cancel</button>
+              <button type="button" class="btn btn-danger" id="volunteerCancelButton" data-dismiss="modal" aria-hidden="true">Close</button>
             </div>
           </div>
         </form>
@@ -287,47 +286,57 @@
 
         <!-- Start of modal body for volunteer information -->
         <form class="hide form-horizontal" id="volunteerUserEntry">
-          </br>
+          <!-- User entry submit message -->
+          <div class="form-group" id="volunteerUserEntrySuccess">
+            <div class="col-sm-offset-1 col-sm-10">
+              Thank you! You have successfully volunteered to help this requester. The requester will contact you with more information about the event.
+            </div>
+            </br>
+            </br>
+          </div>
+
           <!-- Name -->
-          <div class="form-group">
-            <label class="control-label col-sm-offset-1 col-sm-2" for="nameInput">Name:</label>
+          <div class="form-group volunteerUserEntryContent">
+            </br>
+            <label class="control-label col-sm-offset-0 col-sm-4" for="nameInput">What is your name?</label>
             <div class="col-sm-6">
               <input type="text" class="form-control requiredInput" id="nameInput" placeholder="Name">
             </div>
           </div>
 
           <!-- Contacts -->
-          <div class="form-group">
-            <label class="control-label col-sm-offset-1 col-sm-2" for="phoneInput">Contacts:</label>
+          <div class="form-group volunteerUserEntryContent">
+            <label class="control-label col-sm-offset-0 col-sm-4" for="phoneInput">How can we contact you?</label>
             <div class="col-sm-6"> 
               <input type="tel" class="form-control requiredInput" id="phoneInput" placeholder="Phone Number">
             </div>
           </div>
-          <div class="form-group">
-            <div class="col-sm-offset-3 col-sm-6"> 
+          <div class="form-group volunteerUserEntryContent">
+            <div class="col-sm-offset-4 col-sm-6"> 
               <input type="email" class="form-control requiredInput" id="emailInput" placeholder="E-Mail Address">
             </div>
           </div>
 
           <!-- Description -->
-          <div class="form-group">
-            <label class="control-label col-sm-offset-1 col-sm-2" for="description">Description:</label>
+          <div class="form-group volunteerUserEntryContent">
+            <label class="control-label col-sm-offset-0 col-sm-4" for="description">What help can you offer?</label>
             <div class="col-sm-6"> 
               <textarea type="text" class="form-control" rows="10" id="descriptionInput" placeholder="Description"></textarea>
             </div>
           </div>
 
           <!-- Buttons -->
-          <div class="form-group">
+          <div class="form-group volunteerUserEntryContent">
             <div class="col-sm-offset-4 col-sm-1">
               <button type="button" class="btn btn-success" id="volunteerSubmitButton" role="button">Submit</button>
             </div>
             <div class="col-sm-offset-1 col-sm-1">
-              <button type="button" class="btn btn-danger" id="volunteerCancelButton" data-dismiss="modal" aria-hidden="true">Cancel</button>
+              <button type="button" class="btn btn-danger" id="volunteerCancelButton" data-dismiss="modal" aria-hidden="true">Close</button>
             </div>
           </div>
         </form>
         <!-- End of modal body for volunteer information -->
+        
       </div>
     </div>
   </div>

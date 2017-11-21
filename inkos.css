@@ -110,6 +110,11 @@ body {margin:0;}
 	width: 378px;
 	
 }
+
+.carousel_pic{
+	width: 760px;
+}
+
 .active { 
     background-color: yellow;
 }
@@ -120,7 +125,17 @@ body {margin:0;}
 	width: 378px;
 }
 
-.carousel-caption >h4 >a:hover{
+.list-group-item>a{
+	text-decoration: none;
+	color:#000;
+}
+
+.list-group-item>a:hover{
+	text-decoration: none;
+	color:#555;
+}
+
+a:hover> .carousel-caption >h4 {
 	text-decoration: none;
 	color: #bcdefa;
 }
@@ -163,6 +178,13 @@ body {margin:0;}
 	background: yellow;
 }
 
+#volTable>tbody>tr:hover,
+#volTable>tbody>tr:focus{
+	background-color: #ccc;
+
+}
+
+
 /* Volunteer Modal */
 #volunteerModalHeader{
 	display: inline;
@@ -173,7 +195,7 @@ body {margin:0;}
 
 /* Shelter Map Image */
 #shelterMapImage{
-	max-width: 75%;
+	max-width: 60%;
 	height: auto;
 }
 
@@ -205,6 +227,12 @@ body {margin:0;}
 #shelterModalHeader{
 	display: inline;
 	font-size: 16px;
+}
+
+#shelterTable>tbody>tr:hover,
+#shelterTable>tbody>tr:focus{
+	background-color: #ccc;
+
 }
 
 /* CSS for How to Survive Page */

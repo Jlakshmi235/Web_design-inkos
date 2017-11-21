@@ -5,12 +5,12 @@ $(document).ready(function(){
 /* Functions for Index Page */    
 	var clickEvent = false;
 	$('#myCarousel').carousel({
-		interval:   4000	
+		interval: 3000	
 	}).on('click', '.list-group li', function() {
 			clickEvent = true;
 			$('.list-group li').removeClass('active');
 			$(this).addClass('active');		
-	}).on('slid.bs.carousel', function(e) {
+	}).on('slide.bs.carousel', function(e) {
 		if(!clickEvent) {
 			var count = $('.list-group').children().length -1;
 			var current = $('.list-group li.active');
@@ -22,8 +22,11 @@ $(document).ready(function(){
 		}
 		clickEvent = false;
 	});
-	
+
 /* Functions for Request Help Page */
+  $('.requestUserEntryContent').show();
+  $('#requestUserEntrySuccess').hide();
+
 	$('#requestSubmitButton').on('click', function() {
 		var name = $('#nameInput').val().trim();
 		var street = $('#streetInput').val().trim();
@@ -39,6 +42,8 @@ $(document).ready(function(){
 			$('#requestUserEntry').trigger("reset");
 			$('#emptyFieldAlert').hide();
 			$('#submitSuccessAlert').show();
+      $('.requestUserEntryContent').hide();
+      $('#requestUserEntrySuccess').show();
 		}
 		else{
 			$('#emptyFieldAlert').show();
@@ -139,6 +144,8 @@ $(document).ready(function(){
     	$("#volunteerInfoForm").slideUp();
     	$("#volunteerUserEntry").removeClass("hide");
     	$("#volunteerModalHeader").text("Volunteer Information");
+      $('.volunteerUserEntryContent').show();
+      $('#volunteerUserEntrySuccess').hide();
 	});
 
 	$(document).on("click", "#volunteerSubmitButton", function(event){
@@ -151,6 +158,8 @@ $(document).ready(function(){
       		$('#emptyFieldAlert').hide();
       		$('#submitSuccessAlert').show();
       		$('#volunteerUserEntry').trigger("reset");
+          $('.volunteerUserEntryContent').hide();
+          $('#volunteerUserEntrySuccess').show();
     	}
     	else{
       		$('#emptyFieldAlert').show();
