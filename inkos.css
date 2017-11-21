@@ -83,7 +83,7 @@ body {margin:0;}
 
 #weather_on_day > a:hover{
 	text-decoration: none;
-	color: #555;
+	color: #5079ba;
 }
 
 /* Carousel */
@@ -242,24 +242,40 @@ a:hover> .carousel-caption >h4 {
 	width: 100%;
     table-layout: fixed;
 }
-	
+
+/* START added 9:00PM 11/20 */	
 .disasters-cell {
-    border: 0.5px solid;
-    background-color: #4067a5;   
+    border: 10px solid white;
+    background-color: #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color:black;
 }
 
 .disasters-cell> a> p:focus,
 .disasters-cell> a> p:hover{
-	color: white;
+	color: #5079ba;	
+}
+
+.disasters-cell> a:focus,
+.disasters-cell> a:hover{
+	text-decoration: none;
 }
 
 .selected{
-	background-color: #163c7a;
+	background-color: #bbb;
+}
+
+.selected> a> p:focus,
+.selected> a> p:hover{
+	color: #fff;	
 }
 
 .selected> a> p{
 	color: white;
 }
+/* END added 9:00PM 11/20 */
 
 .link-box{
 	font-size: 16px;
@@ -275,8 +291,28 @@ a:hover> .carousel-caption >h4 {
 	font-size: 15px;
 	font-weight: normal;
 	display: inline;
-	color: #ccc;
+	color: #000;
 }
+
+/* START added 9:00PM 11/20 */
+.col-sm-2{
+	background-color: #eee;
+	border: 10px solid white;
+	padding: 20px;
+}
+
+.col-sm-2 >a >p{
+	color: #000;
+}
+
+.col-sm-2 >a> p:hover{
+	color: #5079ba;	
+}
+
+.col-sm-2 >a:hover{
+	text-decoration: none;
+}
+/* END added 9:00PM 11/20 */
 
 /* Instructions text */
 .text-box {
