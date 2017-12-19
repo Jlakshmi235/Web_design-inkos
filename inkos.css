@@ -1,6 +1,28 @@
-body {margin:0;}
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%; 
+	position: relative;
+	margin: 0;
+}
 
 /* Common CSS */
+
+/* Fonts */
+#web-head{
+	font-family: bebas_neue_regularregular;
+}
+
+@font-face {
+    font-family: 'bebas_neue_regularregular';
+    src: url('bebasneue_regular-webfont.woff2') format('woff2'),
+         url('bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* Navigation Bar */
 #navBar {
@@ -37,6 +59,19 @@ body {margin:0;}
 	font-size: 14px;
 	font-style: italic;
 	color: white;
+}
+
+/* Footer */
+#footer{
+	background-color: #4067a5;
+	width: 100%;
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: absolute;
+	bottom: 0px;
 }
 
 /* Instruction Font */
@@ -295,21 +330,21 @@ a:hover> .carousel-caption >h4 {
 }
 
 /* START added 9:00PM 11/20 */
-.col-sm-2{
+.selectionButton{
 	background-color: #eee;
 	border: 10px solid white;
 	padding: 20px;
 }
 
-.col-sm-2 >a >p{
+.selectionButton >a >p{
 	color: #000;
 }
 
-.col-sm-2 >a> p:hover{
+.selectionButton >a> p:hover{
 	color: #5079ba;	
 }
 
-.col-sm-2 >a:hover{
+.selectionButton >a:hover{
 	text-decoration: none;
 }
 /* END added 9:00PM 11/20 */
